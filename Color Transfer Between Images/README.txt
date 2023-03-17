@@ -1,6 +1,4 @@
-I downloaded both of .py and .ipynb versions of it.
-
-To start code, you need to give path of image manually because there was no file to iterate over names of photos.
+To start code, you need to give path of image manually.
 
 I used NCC to calculate similarities
 
