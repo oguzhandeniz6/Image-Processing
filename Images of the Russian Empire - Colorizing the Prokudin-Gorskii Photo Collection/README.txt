@@ -1,5 +1,3 @@
-I downloaded both of .py and .ipynb versions of it.
-
 To start code, you need to give path of image manually because there was no file to iterate over names of photos.
 
 I didn't use SSD function in latest version of code, but i didn't delete it.
