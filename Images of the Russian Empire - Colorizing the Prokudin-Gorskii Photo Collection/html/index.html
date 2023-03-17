@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+		
+		</style>
+    </head>
+    <body class = "typora-export">
+        <div id="write" class"is-node">
+		<p>
+			<h1 style="font-size:50px; text-align:center">
+				<a name="header-n357" class="md-header-anchor"></a>
+				Hacettepe University
+			</h1>
+			<h2 style="font-size:40px; text-align:center">
+				BBM415 - Fundamentals Of Image Processing Lab.
+			</h2>
+		</p>
+		<p style="font-size:25px; text-align: center">
+			Assignment 1 Report <br> 
+			Images of the Russian Empire: Colorizing the Prokudin-Gorskii Photo
+Collection <br> <br>
+			
+			Oğuzhan Deniz <br> 
+			21946022 <br>
+			
+		</p>
+		
+		<p style="font-size:20px; text-align:center">
+			In this problem, we need to combine the RGB channels of a photo. 
+			But while doing this, we notice that the RGB channels of the photo are not fully aligned. 
+			So we need to align these channels first by using some methods. 
+			Then we use some enhancement methods over the photo we have obtained and ensure that an image is close to the original.
+			<br><br><br><br><br><br>
+			First of all, I needed to seperate channels.
+			After that, I had 3 different, equal-sized photos.
+			I knew I need to align these but I didn't know how to do it.
+			I did a lot of research on the internet and came across 2 methods: <br>
+			The 1st method, the SSD method (Sum of Squared Differences), seems easier and faster in practice, but unfortunately the results did not satisfy me. <br>
+			Then I tried the 2nd method NCC (Normalized Cross Correlation) and the results I got were quite satisfactory. <br>
+			I decided to use this method even though it works slower than SSD.
+			If the photos we were working on were much larger sized photos, I would have optimized NCC using the Image Pyramid method, but they were all small sized photos so I didn't need any optimization. <br>
+			Although the results I got after alignment were satisfactory, I was aware that it could still be improved.
+			So first I applied the Histogram Equalization method to the raw image.
+			With that alone, there was a noticeable difference.
+			Then I played with the Gamma settings of the result photos and tried to improve the photo even more by using the Laplacian method. <br>
+			I also tried the Gaussian, Average, and Median Filtering methods, but since none of them produced a satisfactory result, I decided not to use them.
+			
+			<br><br><br>
+			Photos in order: <br>
+			1- Non-Aligned Image <br>
+			2- Aligned But Non-Histogram Equalization <br>
+			3- Aligned with Histogram Equalization <br>
+			4- Aligned with Histogram Equalization and Gamma Adjustment <br>
+			5- Aligned with Histogram Equalization, Gamma Adjustment and Laplacian Method <br>
+		</p>
+		
+		</div>
+		<div class="photos", style="text-align:center;">
+		
+			<br> 00088.v <br>
+				
+			<img src="images/00088v/00088v - non aligned result.jpg" alt="Non Aligned">
+			<figcaption> 1 - Non Aligned </figcaption>
+			
+			<img src="images/00088v/00088v - non histogram result.jpg" alt="Non Histogram Equalization">
+			<figcaption> 2 - Non Histogram Equalization </figcaption>
+			
+			<img src="images/00088v/00088v - normal result.jpg" alt="Histogram Equalization">
+			<figcaption> 3 - Histogram Equalization </figcaption>
+			
+			<img src="images/00088v/00088v - gamma result.jpg" alt="Gamma Adjustment">
+			<figcaption> 4 - Gamma Adjustment </figcaption>
+			
+			<img src="images/00088v/00088v - final result.jpg" alt="Laplacian Method">
+			<figcaption> 5 - Laplacian Method </figcaption>
+			
+			
+			<br> 00153.v <br>
+			<img src="images/00153v/00153v - non aligned result.jpg" alt="Non Aligned">
+			<figcaption> 1 - Non Aligned </figcaption>
+			
+			<img src="images/00153v/00153v - non histogram result.jpg" alt="Non Histogram Equalization">
+			<figcaption> 2 - Non Histogram Equalization </figcaption>
+			
+			<img src="images/00153v/00153v - normal result.jpg" alt="Histogram Equalization">
+			<figcaption> 3 - Histogram Equalization </figcaption>
+			
+			<img src="images/00153v/00153v - gamma result.jpg" alt="Gamma Adjustment">
+			<figcaption> 4 - Gamma Adjustment </figcaption>
+			
+			<img src="images/00153v/00153v - final result.jpg" alt="Laplacian Method">
+			<figcaption> 5 - Laplacian Method </figcaption>
+			
+			
+			<br> 00398.v <br>
+			<img src="images/00398v/00398v - non aligned result.jpg" alt="Non Aligned">
+			<figcaption> 1 - Non Aligned </figcaption>
+			
+			<img src="images/00398v/00398v - non histogram result.jpg" alt="Non Histogram Equalization">
+			<figcaption> 2 - Non Histogram Equalization </figcaption>
+			
+			<img src="images/00398v/00398v - normal result.jpg" alt="Histogram Equalization">
+			<figcaption> 3 - Histogram Equalization </figcaption>
+			
+			<img src="images/00398v/00398v - gamma result.jpg" alt="Gamma Adjustment">
+			<figcaption> 4 - Gamma Adjustment </figcaption>
+			
+			<img src="images/00398v/00398v - final result.jpg" alt="Laplacian Method">
+			<figcaption> 5 - Laplacian Method </figcaption>
+			
+			
+			
+			<br> 00889.v <br>
+			<img src="images/00889v/00889v - non aligned result.jpg" alt="Non Aligned">
+			<figcaption> 1 - Non Aligned </figcaption>
+			
+			<img src="images/00889v/00889v - non histogram result.jpg" alt="Non Histogram Equalization">
+			<figcaption> 2 - Non Histogram Equalization </figcaption>
+			
+			<img src="images/00889v/00889v - normal result.jpg" alt="Histogram Equalization">
+			<figcaption> 3 - Histogram Equalization </figcaption>
+			
+			<img src="images/00889v/00889v - gamma result.jpg" alt="Gamma Adjustment">
+			<figcaption> 4 - Gamma Adjustment </figcaption>
+			
+			<img src="images/00889v/00889v - final result.jpg" alt="Laplacian Method">
+			<figcaption> 5 - Laplacian Method </figcaption>
+			
+			
+			<br> 00907.v <br>
+			<img src="images/00907v/00907v - non aligned result.jpg" alt="Non Aligned">
+			<figcaption> 1 - Non Aligned </figcaption>
+			
+			<img src="images/00907v/00907v - non histogram result.jpg" alt="Non Histogram Equalization">
+			<figcaption> 2 - Non Histogram Equalization </figcaption>
+			
+			<img src="images/00907v/00907v - normal result.jpg" alt="Histogram Equalization">
+			<figcaption> 3 - Histogram Equalization </figcaption>
+			
+			<img src="images/00907v/00907v - gamma result.jpg" alt="Gamma Adjustment">
+			<figcaption> 4 - Gamma Adjustment </figcaption>
+			
+			<img src="images/00907v/00907v - final result.jpg" alt="Laplacian Method">
+			<figcaption> 5 - Laplacian Method </figcaption>
+			
+			
+			
+			<br> 01269.v <br>
+			<img src="images/01269v/01269v - non aligned result.jpg" alt="Non Aligned">
+			<figcaption> 1 - Non Aligned </figcaption>
+			
+			<img src="images/01269v/01269v - non histogram result.jpg" alt="Non Histogram Equalization">
+			<figcaption> 2 - Non Histogram Equalization </figcaption>
+			
+			<img src="images/01269v/01269v - normal result.jpg" alt="Histogram Equalization">
+			<figcaption> 3 - Histogram Equalization </figcaption>
+			
+			<img src="images/01269v/01269v - gamma result.jpg" alt="Gamma Adjustment">
+			<figcaption> 4 - Gamma Adjustment </figcaption>
+			
+			<img src="images/01269v/01269v - final result.jpg" alt="Laplacian Method">
+			<figcaption> 5 - Laplacian Method </figcaption>
+			
+			
+			<br> 01728.v <br>
+			<img src="images/01728v/01728v - non aligned result.jpg" alt="Non Aligned">
+			<figcaption> 1 - Non Aligned </figcaption>
+			
+			<img src="images/01728v/01728v - non histogram result.jpg" alt="Non Histogram Equalization">
+			<figcaption> 2 - Non Histogram Equalization </figcaption>
+			
+			<img src="images/01728v/01728v - normal result.jpg" alt="Histogram Equalization">
+			<figcaption> 3 - Histogram Equalization </figcaption>
+			
+			<img src="images/01728v/01728v - gamma result.jpg" alt="Gamma Adjustment">
+			<figcaption> 4 - Gamma Adjustment </figcaption>
+			
+			<img src="images/01728v/01728v - final result.jpg" alt="Laplacian Method">
+			<figcaption> 5 - Laplacian Method </figcaption>
+			
+			
+			<br> 10131.v <br>
+			<img src="images/10131v/10131v - non aligned result.jpg" alt="Non Aligned">
+			<figcaption> 1 - Non Aligned </figcaption>
+			
+			<img src="images/10131v/10131v - non histogram result.jpg" alt="Non Histogram Equalization">
+			<figcaption> 2 - Non Histogram Equalization </figcaption>
+			
+			<img src="images/10131v/10131v - normal result.jpg" alt="Histogram Equalization">
+			<figcaption> 3 - Histogram Equalization </figcaption>
+			
+			<img src="images/10131v/10131v - gamma result.jpg" alt="Gamma Adjustment">
+			<figcaption> 4 - Gamma Adjustment </figcaption>
+			
+			<img src="images/10131v/10131v - final result.jpg" alt="Laplacian Method">
+			<figcaption> 5 - Laplacian Method </figcaption>
+			
+		</div>
+		
+    </body>
+</html>
